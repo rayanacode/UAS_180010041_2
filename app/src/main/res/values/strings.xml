@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UAS 180010041 2</string>
+    <string name="ganti_foto">Ganti Foto</string>
+    <string name="nama">Nama</string>
+    <string name="tahun">Tahun</string>
+    <string name="stocks">Stock</string>
+    <string name="brands">Brand</string>
+    <string name="save">Simpan</string>
+    <string name="add">Tambah Barang</string>
+    <string name="edit">Edit Barang</string>
+    <string name="delete">Hapus Barang</string>
+    <string name="jenis">Jenis</string>
+    <string name="stock">Stock :</string>
+    <string name="brand">Brand :</string>
+    <string name="category">Jenis :</string>
+    <string name="fullbike">Full Bike</string>
+    <string name="pedalset">Pedalset</string>
+    <string name="wheelset">Wheelset</string>
+    <string name="saddle">Saddle</string>
+    <string name="frame">Frame</string>
+</resources>

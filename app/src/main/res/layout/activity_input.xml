@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:orientation="vertical"
+        tools:context=".InputActivity">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="270dp"
+            android:layout_height="167dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/ganti_foto"
+            app:srcCompat="@drawable/ic_image_black_24dp" />
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:autofillHints="@string/nama"
+            android:ems="10"
+            android:hint="@string/nama"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edit_tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:autofillHints="@string/tahun"
+            android:ems="10"
+            android:hint="@string/tahun"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edit_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:autofillHints="@string/stocks"
+            android:ems="10"
+            android:hint="@string/stocks"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_brand"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:autofillHints="@string/brands"
+            android:ems="10"
+            android:hint="@string/brands"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:id="@+id/rg_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/small_margin">
+
+            <RadioButton
+                android:id="@+id/fullbike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/fullbike"
+                tools:layout_conversion_absoluteHeight="29dp"
+                tools:layout_conversion_absoluteWidth="85dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="359dp" />
+
+            <RadioButton
+                android:id="@+id/saddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/saddle"
+                tools:layout_conversion_absoluteHeight="29dp"
+                tools:layout_conversion_absoluteWidth="75dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="387dp" />
+
+            <RadioButton
+                android:id="@+id/pedalset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/pedalset"
+                tools:layout_conversion_absoluteHeight="29dp"
+                tools:layout_conversion_absoluteWidth="87dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="416dp" />
+
+            <RadioButton
+                android:id="@+id/wheelset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/wheelset"
+                tools:layout_conversion_absoluteHeight="28dp"
+                tools:layout_conversion_absoluteWidth="91dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="445dp" />
+
+            <RadioButton
+                android:id="@+id/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/frame"
+                tools:layout_conversion_absoluteHeight="28dp"
+                tools:layout_conversion_absoluteWidth="73dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="473dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="@string/save" />
+    </LinearLayout>
+    </ScrollView>
